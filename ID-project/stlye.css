@@ -54,26 +54,45 @@ body {
     font-size: 14px;
 }
 
-/* --- PRODUCT GRID --- */
+/* --- PRODUCT GRID: responsive and full-width cards --- */
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
     padding: 20px;
-    background: white;
+    /* remove the white page-wide background so cards themselves show white */
+    background: transparent;
 }
 
+/* --- PRODUCT CARD --- */
 .product {
+    background: white;              /* each product is its own white card */
+    padding: 12px;                  /* space inside the card */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     text-align: center;
     font-weight: bold;
+
+    display: flex;                  /* stack image + text */
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    /* make sure the card has a consistent visible area */
+    min-height: 260px;              /* adjust as you want */
 }
 
-.product div {
+/* --- IMAGE (Perfect square inside the card) --- */
+.product img {
     width: 100%;
-    height: 90px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
     background: #dcdcdc;
-    margin-bottom: 5px;
+    display: block;                 /* prevents inline whitespace issues */
 }
+
+
 
 /* --- CONTACT BOX --- */
 .contact {
@@ -85,20 +104,33 @@ body {
     font-size: 14px;
 }
 
-/* --- BOTTOM NAVIGATION BAR --- */
-.bottom-nav {
+.popup {
+    display: none;                /* hidden by default */
     position: fixed;
-    bottom: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: #f2eafd;
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
+    background: rgba(0,0,0,0.6);  /* dark background */
+    justify-content: center;
     align-items: center;
-    padding: 15px;
-    border-radius: 20px 20px 0 0;
+    z-index: 999;
 }
 
-.bottom-nav span {
-    font-size: 18px;
-    cursor: pointer;
+/* POPUP BOX */
+.popup-content {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* POPUP IMAGE */
+.popup-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
 }

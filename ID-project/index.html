@@ -36,27 +36,39 @@
     <!-- PRODUCT GRID -->
     <div class="products">
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Good chair"
+            onclick="openPopup(this.src, 'Good chair')">
             Good chair
         </div>
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Chair"
+            onclick="openPopup(this.src, 'Chair')">
             Chair
         </div>
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Chair"
+            onclick="openPopup(this.src, 'Chair')">
             Chair
         </div>
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Chair"
+            onclick="openPopup(this.src, 'Chair')">
             Chair
         </div>
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Chair"
+            onclick="openPopup(this.src, 'Chair')">
             Chair
         </div>
         <div class="product">
-            <div></div>
+            <img src="images/chair1.jpg"
+            alt="Chair"
+            onclick="openPopup(this.src, 'Chair')">
             Chair
         </div>
     </div>
@@ -67,13 +79,14 @@
         chairbuy@gmail.com for<br>
         more information
     </div>
-
-    <!-- BOTTOM NAVIGATION BAR -->
-    <div class="bottom-nav">
-        <span>≡</span>
-        <span>Home</span>
-        <span>⚪</span>
+    <!-- POPUP OVERLAY (hidden at start) -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="">
+            <p id="popup-text"></p>
+        </div>
     </div>
 
+<script src="script.js"></script>
 </body>
 </html>
