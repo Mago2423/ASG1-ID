@@ -20,6 +20,33 @@ body {
     color: #000;
 }
 
+/* --- SEARCH BAR WRAPPER --- */
+.search {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* --- SEARCH INPUT --- */
+.searchbar {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Hover + focus effect */
+.searchbar:focus {
+    border-color: #6a4fee;
+    box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
+}
+
 /* --- HERO SECTION --- */
 .hero {
     padding: 20px;
