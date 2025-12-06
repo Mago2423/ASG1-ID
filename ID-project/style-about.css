@@ -88,29 +88,46 @@ h1 {
     display:inline-block;
     width: 50%
 }
+.achieve-title {
+    margin: 0.2;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    font-size: large;
+    display: flex;
+    padding: 12px;
+}
 .achievements {
     background: white;
-    width: 400px;
+    width: 33%;
     height: 100px;
     padding: 12px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     text-align: center;
     font-weight: bold;
-    display: flex;                 
-    flex-direction: column;
+    display: inline-block;                 
+    flex-direction: row;
     align-items: center;
     gap: 8px;
 }
 .achievements .text {
     flex: 1;
+    align-self: center;
+}
+.review-title {
+    padding: 12px;
+    display:flex;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    font-size: large;
+
 }
 .reviews {
     padding:20px;
     background: #dcdcdc;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: end;
     border: 10px;
     border-color: #000;
     gap: 20px;

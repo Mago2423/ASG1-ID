@@ -17,3 +17,7 @@ Beanbag Chair:
 https://www.fruugo.sg/folding-outdoor-seat-heavy-duty-portable-chairs-for-outside-for-camping-fishing-outdoor-activities/p-114021010-240046077?language=en&ac=bing&msclkid=3b5aa6abd46612888d7bcf9f9aa6c698&utm_source=bing&utm_medium=cpc&utm_campaign=Fruugo_SG&utm_term=2323336789578435&utm_content=Ad%20group%20%231
 Folding Chair:
 https://www.ikea.com/sg/en/p/gunde-folding-chair-black-80217798/?gclsrc=3p.ds&msclkid=e7fe662b2af21f265f160f1f693e4b51
+clouds:
+https://unsplash.com/collections/137627/calm-wallpapers
+
+for more advanced code, like grid and pop ups on click that i havent learn in class, i asked chat gpt to generate code for them and then explain it to me.

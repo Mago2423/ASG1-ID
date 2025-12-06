@@ -4,7 +4,6 @@ body {
     background: #f9f9f9;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -20,7 +19,6 @@ body {
     color: #000;
 }
 
-/* --- SEARCH BAR WRAPPER --- */
 .search {
     width: 100%;
     padding: 15px 20px;
@@ -29,7 +27,6 @@ body {
     box-sizing: border-box;
 }
 
-/* --- SEARCH INPUT --- */
 .searchbar {
     width: 100%;
     max-width: 500px;
@@ -41,16 +38,16 @@ body {
     transition: 0.3s;
 }
 
-/* Hover + focus effect */
 .searchbar:focus {
     border-color: #6a4fee;
     box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
 }
 
-/* --- Intro SECTION --- */
 .intro {
     padding: 20px;
-    background: white;
+    background: url("pictures/clouds.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     gap: 20px;
 }
@@ -74,54 +71,43 @@ body {
     background: #dcdcdc;
 }
 
-/* --- SALE MESSAGE --- */
 .sale {
     text-align: center;
     padding: 10px;
     font-size: 14px;
 }
 
-/* --- PRODUCT GRID: responsive and full-width cards --- */
 .products {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
-    /* remove the white page-wide background so cards themselves show white */
     background: transparent;
 }
 
-/* --- PRODUCT CARD --- */
 .product {
-    background: white;              /* each product is its own white card */
-    padding: 12px;                  /* space inside the card */
+    background: white;
+    padding: 12px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     text-align: center;
     font-weight: bold;
-
-    display: flex;                  /* stack image + text */
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
-
-    /* make sure the card has a consistent visible area */
-    min-height: 260px;              /* adjust as you want */
+    min-height: 260px;
 }
 
-/* --- IMAGE (Perfect square inside the card) --- */
 .product img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
     background: #dcdcdc;
-    display: block;                 /* prevents inline whitespace issues */
+    display: block;
 }
 
-
-
-/* --- CONTACT BOX --- */
 .contact {
     background: #e6e6e6;
     text-align: center;
@@ -132,19 +118,18 @@ body {
 }
 
 .popup {
-    display: none;                /* hidden by default */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.6);  /* dark background */
+    background: rgba(0,0,0,0.6);
     justify-content: center;
     align-items: center;
     z-index: 999;
 }
 
-/* POPUP BOX */
 .popup-content {
     background: white;
     padding: 15px;
@@ -154,7 +139,6 @@ body {
     text-align: center;
 }
 
-/* POPUP IMAGE */
 .popup-content img {
     width: 100%;
     border-radius: 10px;
