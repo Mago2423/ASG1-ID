@@ -47,19 +47,19 @@ body {
     box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
 }
 
-/* --- HERO SECTION --- */
-.hero {
+/* --- Intro SECTION --- */
+.intro {
     padding: 20px;
     background: white;
     display: flex;
     gap: 20px;
 }
 
-.hero .text {
+.intro .text {
     flex: 1;
 }
 
-.hero button {
+.intro button {
     background: black;
     color: white;
     padding: 10px 30px;
@@ -68,7 +68,7 @@ body {
     border-radius: 5px;
 }
 
-.hero img {
+.intro img {
     width: 150px;
     height: 150px;
     background: #dcdcdc;
