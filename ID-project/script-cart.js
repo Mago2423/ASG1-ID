@@ -30,5 +30,9 @@ function decrease(index) {
     }
 }
 
+document.querySelector('.button-press').addEventListener('click', () => {
+alert("Order Pending!\n your order will be approved in 4 to 7 business days.");
+});
+
 
 
