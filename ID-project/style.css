@@ -236,8 +236,6 @@ h1 {
 
 /* intro section */
 .introB {
-    padding: 10px;
-    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,6 +344,15 @@ h1 {
     background-color:#e6e6e6;
 }
 
+.contactB {
+    background: #e6e6e6;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
 
 
 /*cart page css*/
@@ -446,7 +453,8 @@ h1 {
     text-align: center;
     justify-content: center;
     padding: 10px;
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .itemsC {
     padding: 20px;
@@ -503,6 +511,8 @@ h1 {
     padding-right: 30px;
     text-align: center;
     justify-content: center;
+    max-width: 300px;
+    margin: auto;
 }
 
 .order-boxC {
