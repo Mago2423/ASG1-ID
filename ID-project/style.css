@@ -1,10 +1,15 @@
-/*home page css*/
+/* =========================================
+   HOME PAGE CSS
+========================================= */
+
+/* --- GLOBAL STYLE --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f9f9f9;
 }
 
+/* --- NAVBAR (Home) --- */
 .navbarA {
     display: flex;
     justify-content: space-between;
@@ -26,26 +31,16 @@ h1 {
     margin-left: 20px;
 }
 
-.logoA {
+/* Navbar Layout Sections */
+.logoA, .searchA, .pagesA {
     flex: 1;
-    display:flex;
+    display: flex;
     align-items: center;
 }
+.searchA { justify-content: center; }
+.pagesA { margin-left: 20px; }
 
-.searchA {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pagesA {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
+/* --- SEARCH BAR --- */
 .searchbarA {
     width: 100%;
     max-width: 500px;
@@ -56,12 +51,12 @@ h1 {
     outline: none;
     transition: 0.3s;
 }
-
 .searchbarA:focus {
     border-color: #6a4fee;
     box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
 }
 
+/* --- INTRO SECTION --- */
 .introA {
     padding: 20px;
     background: url("pictures/clouds.jpeg");
@@ -71,9 +66,7 @@ h1 {
     gap: 20px;
 }
 
-.introA .textA {
-    flex: 1;
-}
+.introA .textA { flex: 1; }
 
 .button {
     background: black;
@@ -90,27 +83,27 @@ h1 {
     background: #dcdcdc;
 }
 
+/* --- SALE BAR --- */
 .saleA {
     text-align: center;
     padding: 10px;
     font-size: 14px;
 }
 
+/* --- PRODUCTS GRID --- */
 .productsA {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
     padding: 20px;
-    background: transparent;
 }
 
 .productA {
-    background: rgb(255, 255, 255);
+    background: white;
     padding: 12px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     text-align: center;
-    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,19 +116,18 @@ h1 {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 8px;
-    background: #dcdcdc;
-    display: block;
 }
 
+/* --- CONTACT --- */
 .contactA {
     background: #e6e6e6;
     text-align: center;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
-    font-size: 14px;
 }
 
+/* --- POPUP (Home) --- */
 .popupA {
     display: none;
     position: fixed;
@@ -146,7 +138,6 @@ h1 {
     background: rgba(0,0,0,0.6);
     justify-content: center;
     align-items: center;
-    z-index: 999;
 }
 
 .popup-contentA {
@@ -157,25 +148,24 @@ h1 {
     max-width: 350px;
     text-align: center;
 }
-
 .popup-contentA img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: cover;
 }
 
 
-/*About page css*/
+/* =========================================
+   ABOUT PAGE CSS
+========================================= */
 
-
+/* --- GLOBAL STYLE (About) --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f9f9f9;
 }
 
-/* --- NAVBAR --- */
+/* --- NAVBAR (About) --- */
 .navbarB {
     display: flex;
     justify-content: space-between;
@@ -191,32 +181,14 @@ body {
     color: #000;
 }
 
-h1 {
-    color: #6a4fee;
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.logoB {
+.logoB, .searchB, .pagesB {
     flex: 1;
-    display:flex;
+    display: flex;
     align-items: center;
 }
+.searchB { justify-content: center; }
 
-.searchB {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pagesB {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    margin-left: 20px;
-}
-/* --- SEARCH INPUT --- */
+/* --- SEARCH BAR --- */
 .searchbarB {
     width: 100%;
     max-width: 500px;
@@ -224,22 +196,17 @@ h1 {
     font-size: 16px;
     border-radius: 25px;
     border: 2px solid #ccc;
-    outline: none;
-    transition: 0.3s;
 }
-
-/* Hover + focus effect */
 .searchbarB:focus {
     border-color: #6a4fee;
     box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
 }
 
-/* intro section */
+/* --- INTRO ABOUT SECTION --- */
 .introB {
     padding: 20px;
     background: url("pictures/clouds.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     gap: 20px;
 }
@@ -248,328 +215,190 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
+/* --- INFO BOX --- */
 .infoB {
-    padding:20px;
+    padding: 20px;
     background: peachpuff;
     display: flex;
-    align-items:center;
-    justify-content: center;
-    text-align: center;
-    border: 10px;
-    border-color: #000;
+    align-items: center;
     gap: 20px;
     margin: 10px;
-    flex-direction: row;
 }
+
 .infoB .textB {
-    display:flex;
-    width: 60%
+    width: 60%;
 }
-
-.imagegoodB {
-    flex: 40%;
-    max-width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .imagegoodB img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
     border-radius: 6px;
-    display: block;
-    min-width: 100px;
 }
 
-
+/* --- ACHIEVEMENTS SECTION --- */
 .achieve-titleB {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
     font-size: large;
-    display: flex;
     padding: 12px;
 }
+
 .achievementsB {
     background: rgb(231, 249, 255);
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    text-align: center;
-    font-weight: bold;
-    display: flex;                 
-    flex-direction: row;
-    align-items: center;
+    display: flex;
     gap: 8px;
-    flex-basis: auto;
 }
-.achievementsB .textB {
-    flex: 1;
-    align-self: center;
-}
+
+/* --- REVIEWS SECTION --- */
 .review-titleB {
     padding: 12px;
-    display:flex;
-    font-family: Arial, sans-serif;
     background: blanchedalmond;
     font-size: large;
-
 }
+
 .reviewsB {
-    padding:20px;
+    padding: 20px;
     background: #c6d5ff;
     display: flex;
     flex-wrap: wrap;
-    align-items: end;
-    border: 10px;
-    border-color: #000;
     gap: 20px;
     margin: 10px;
 }
+
 .profileB img {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    object-fit: cover;
-    display: block;
 }
 
 .reviewsB .textB {
-    display:inline-block;
     width: 67%;
-    background-color:#e6e6e6;
+    background: #e6e6e6;
 }
 
+/* --- CONTACT --- */
 .contactB {
     background: #e6e6e6;
-    text-align: center;
     padding: 15px;
     margin: 20px;
     border-radius: 10px;
-    font-size: 14px;
 }
 
 
+/* =========================================
+   CART PAGE CSS
+========================================= */
 
-/*cart page css*/
-
-
+/* --- GLOBAL --- */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f9f9f9;
 }
 
+/* --- NAVBAR (Cart) --- */
 .navbarC {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px;
     background: #e6e6e6;
-    font-weight: bold;
 }
+.navbarC a { color: #000; }
 
-.navbarC a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #000;
-}
-
-h1 {
-    color: #6a4fee;
-    font-size: 20px;
-    margin-left: 20px;
-}
-
-.logoC {
+/* Navbar Sections */
+.logoC, .searchC, .pagesC {
     flex: 1;
-    display:flex;
+    display: flex;
     align-items: center;
 }
+.searchC { justify-content: center; }
 
-.searchC {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.pagesC {
-    flex: 1;
-    display:flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
+/* --- SEARCH BAR --- */
 .searchbarC {
     width: 100%;
     max-width: 500px;
     padding: 10px 15px;
-    font-size: 16px;
     border-radius: 25px;
     border: 2px solid #ccc;
-    outline: none;
-    transition: 0.3s;
 }
-
 .searchbarC:focus {
     border-color: #6a4fee;
-    box-shadow: 0 0 6px rgba(106, 79, 238, 0.4);
+    box-shadow: 0 0 6px rgba(106,79,238,0.4);
 }
 
+/* --- INTRO SECTION --- */
 .introC {
     padding: 20px;
     background: url("pictures/clouds.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     gap: 20px;
-}
-
-.introC .text {
-    flex: 1;
 }
 
 .introC button {
     background: black;
-    color: rgb(255, 239, 239);
+    color: white;
     padding: 10px 30px;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
-.introC img {
-    width: 150px;
-    height: 150px;
-    background: #dcdcdc;
-}
-
+/* --- SALE TITLE --- */
 .saleC {
     text-align: center;
-    justify-content: center;
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
 }
+
+/* --- ITEMS SECTION --- */
 .itemsC {
     padding: 20px;
-    gap: 20px;
-    background-color: #bee5ff;
-    display:inline-block
+    background: #bee5ff;
+    display: inline-block;
 }
-.addC {
-    flex: 1;
-    display:inline-block;
-    padding-left: 12px;
-    text-align: center;
-    justify-content: center;
-    height: 33%;
+.itemsC img {
+    width: 200px;
+    border-radius: 8px;
 }
 
+/* --- PRODUCT BOX --- */
 .productsC {
     display: flex;
-    gap: 20px;
-    padding: 20px;
-    background: transparent;
     flex-direction: column;
-    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .productC {
     background: rgb(225, 247, 255);
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
     text-align: center;
-    font-weight: bold;
-    display: inline-block;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    min-height: 260px;
 }
 
-.itemsC img {
-    width: 200px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 8px;
-    background: #dcdcdc;
-    display: block;
-}
-
-.descriptionC {
-    flex: 1;
-    display:inline-block;
-    padding-left: 30px;
-    padding-right: 30px;
-    text-align: center;
-    justify-content: center;
-    max-width: 300px;
-    margin: auto;
-}
-
-.order-boxC {
-    flex: 1;
-    display: inline-block;
-    padding-left: 12px;
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.counterC {
-    flex: 1;
-    padding-left: 12px;
-    text-align: center;
-    justify-content: center;
-    height: 33%;
-}
-
+/* Sections Inside Product */
+.descriptionC,
+.order-boxC,
+.counterC,
 .button-boxC {
-    flex: 1;
-    display:flex;
-    padding-left: 12px;
     text-align: center;
-    justify-content: center;
-    height: 33%;
 }
 
-.add-buttonC {
+/* --- COUNTER BUTTONS --- */
+.add-buttonC, .minus-buttonC {
     background: black;
     color: white;
     padding: 10px 30px;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
 }
 
-.minus-buttonC {
-    background: black;
-    color: white;
-    padding: 10px 30px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
+/* --- CONTACT --- */
 .contactC {
     background: #e6e6e6;
-    text-align: center;
     padding: 15px;
     margin: 20px;
-    border-radius: 10px;
-    font-size: 14px;
 }
 
+/* --- POPUP (Cart) --- */
 .popupC {
     display: none;
     position: fixed;
@@ -580,24 +409,16 @@ h1 {
     background: rgba(0,0,0,0.6);
     justify-content: center;
     align-items: center;
-    z-index: 999;
 }
 
 .popup-contentC {
     background: white;
     padding: 15px;
     border-radius: 10px;
-    width: 80%;
-    max-width: 350px;
-    text-align: center;
 }
-
 .popup-contentC img {
     width: 100%;
     border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: cover;
 }
 
 
-/*product page css*/
