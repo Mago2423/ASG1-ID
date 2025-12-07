@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chairbuy</title>
 
-    <!-- Link to external CSS file -->
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="style-cart.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
     <div class="navbar">
         <div>Chairbuy.com</div>
         <div class="search">
@@ -20,66 +18,70 @@
             </div>
         </div>
         <div>
-            <a href="#">About us</a>
-            <a href="#">Cart</a>
+            <a href="index-about.html">About us</a>
+            <h1>Cart</h1>
         </div>
     </div>
 
-    <!-- HERO SECTION -->
     <div class="intro">
         <div class="text">
-            <h1>Buy your chair now!</h1>
+            <h2>Cart</h2>
             <button>Buy</button>
         </div>
-        <img alt="chair placeholder">
     </div>
 
-    <!-- SALE MESSAGE -->
     <div class="sale">
-        25% off for first time customers
+        the items in your cart
     </div>
 
-    <!-- PRODUCT GRID -->
     <div class="products">
-        <div class="product">
-            <img src="oak chair.avif" alt="Oak chair"
-            onclick="openPopup(this.src, 'Oak chair')">
-            Oak chair
+        <div class="items">
+            <div class="product">
+                <img src="pictures/oak chair.avif" alt="Oak chair"
+                onclick="openPopup(this.src, 'Oak chair')">
+                Oak chair
+            </div>
+            <div class="add">
+                Oak chair
+                <button>-1/+1</button>
+            </div>
         </div>
+
+
+
         <div class="product">
-            <img src="Birch chair.avif" alt="Birch Chair"
+            <img src="pictures/Birch chair.avif" alt="Birch Chair"
             onclick="openPopup(this.src, 'Chair')">
             Birch Chair
         </div>
         <div class="product">
-            <img src="Camping Chair.jpg" alt="Camping Chair"
+            <img src="pictures/Camping Chair.jpg" alt="Camping Chair"
             onclick="openPopup(this.src, 'Chair')">
             Camping Chair
         </div>
         <div class="product">
-            <img src="Foldable Chair.avif" alt="Foldable Chair"
+            <img src="pictures/Foldable Chair.avif" alt="Foldable Chair"
             onclick="openPopup(this.src, 'Chair')">
             Foldable Chair
         </div>
         <div class="product">
-            <img src="Rocking Chair.avif" alt="Rocking Chair"
+            <img src="pictures/Rocking Chair.avif" alt="Rocking Chair"
             onclick="openPopup(this.src, 'Chair')">
             Rocking Chair
         </div>
         <div class="product">
-            <img src="Bean Bag.avif" alt="Beanbag Chair"
+            <img src="pictures/Bean Bag.avif" alt="Beanbag Chair"
             onclick="openPopup(this.src, 'Chair')">
             Beanbag Chair
         </div>
     </div>
 
-    <!-- CONTACT BOX -->
     <div class="contact">
         contact us at<br>
         chairbuy@gmail.com for<br>
         more information
     </div>
-    <!-- POPUP OVERLAY (hidden at start) -->
+
     <div id="popup" class="popup">
         <div class="popup-content">
             <img id="popup-img" src="" alt="">
@@ -87,6 +89,6 @@
         </div>
     </div>
 
-<script src="script.js"></script>
+<script src="script-cart.js"></script>
 </body>
 </html>
