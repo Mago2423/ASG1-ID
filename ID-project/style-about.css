@@ -23,17 +23,28 @@ body {
 h1 {
     color: #6a4fee;
     font-size: 20px;
+    margin-left: 20px;
 }
 
-/* --- SEARCH BAR WRAPPER --- */
+.logo {
+    flex: 1;
+    display:flex;
+    align-items: center;
+}
+
 .search {
-    width: 100%;
-    padding: 15px 20px;
-    display: flex;
+    flex: 1;
+    display:flex;
+    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
 }
 
+.pages {
+    flex: 1;
+    display:flex;
+    align-items: center;
+    margin-left: 20px;
+}
 /* --- SEARCH INPUT --- */
 .searchbar {
     width: 100%;
