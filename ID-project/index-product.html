@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chairbuy</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style-product.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            Chairbuy.com
+        </div>
+        <div class="search">
+            <input class="searchbar" type="text" placeholder="Search">
+        </div>
+        <div class="pages">
+            <a href="index-about.html">About us</a>
+            <a href="index-cart.html">Cart</a>
+            <a href="index.html">Home</a>
+            <h1>Products</h1>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div class="text">
+            <h2>Products</h2>
+            <button>Order</button>
+        </div>
+    </div>
+
+    <div class="sale">
+        the items in your cart
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <div class="items">
+                <img src="pictures/oak chair.avif" alt="Oak chair"
+                onclick="openPopup(this.src, 'Oak chair')">
+                Oak chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count1">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(1)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(1)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div class="items">
+                <img src="pictures/Birch chair.avif" alt="Birch Chair"
+                onclick="openPopup(this.src, 'Chair')">
+                Birch Chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count2">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(2)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(2)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product">
+            <div class="items">
+                <img src="pictures/Camping Chair.jpg" alt="Camping Chair"
+                onclick="openPopup(this.src, 'Chair')">
+                Camping Chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count3">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(3)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(3)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="items">
+                <img src="pictures/Foldable Chair.avif" alt="Foldable Chair"
+                onclick="openPopup(this.src, 'Chair')">
+                Foldable Chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count4">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(4)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(4)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="items">
+                <img src="pictures/Rocking Chair.avif" alt="Rocking Chair"
+                onclick="openPopup(this.src, 'Chair')">
+                Rocking Chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count5">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(5)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(5)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="items">
+                <img src="pictures/Bean Bag.avif" alt="Beanbag Chair"
+                onclick="openPopup(this.src, 'Chair')">
+                Beanbag Chair
+            </div>
+            <div class="description">
+                <h3>Product description</h3>
+                <p>a chair that is visually appealing, like a tree, very good</p>
+            </div>
+            <div class="order-box">
+                <div class="add">
+                    <h3>Add Items</h3>
+                </div>
+                <div class="counter" id="count6">
+                    <h4>0</h4>
+                </div>
+                <div class="button-box">
+                    <div class="add-button">
+                        <button onclick="decrease(6)">-1</button>
+                    </div>
+                    <div class="minus-button">
+                        <button onclick="increase(6)">+1</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="contact">
+        contact us at<br>
+        chairbuy@gmail.com for<br>
+        more information
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="">
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+<script src="script-cart.js"></script>
+</body>
+</html>
