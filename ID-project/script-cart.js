@@ -10,3 +10,25 @@ document.getElementById("popup").addEventListener("click", function(e) {
         this.style.display = "none";
     }
 });
+
+let counts = [0, 0, 0, 0, 0, 0];
+
+// update a specific counter by index
+function updateDisplay(index) {
+    document.getElementById(`count${index}`).querySelector("h4").textContent = counts[index - 1];
+}
+
+function increase(index) {
+    counts[index - 1]++;
+    updateDisplay(index);
+}
+
+function decrease(index) {
+    if (counts[index - 1] > 0) {
+        counts[index - 1]--;
+        updateDisplay(index);
+    }
+}
+
+
+
