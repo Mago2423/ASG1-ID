@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chairbuy</title>
-
+<!-- External CSS links -->
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!-- Navbar Section -->
     <div class="navbarC">
         <div class="logoC">
-            Chairbuy.com
+            Chairbuy.com <!-- Website logo / brand -->
         </div>
         <div class="searchC">
-            <input class="searchbarC" type="text" placeholder="Search">
+            <input class="searchbarC" type="text" placeholder="Search"><!-- Search bar -->
         </div>
-        <div class="pagesC">
-            <a href="index-about.html">About us</a>
-            <h1>Cart</h1>
-            <a href="index.html">Home</a>
+        <div class="pagesC"> 
+            <a href="index-about.html">About us</a><!-- Link to About page -->
+            <h1>Cart</h1><!-- Current page title -->
+            <a href="index.html">Home</a> <!-- Link to Home page -->
         </div>
     </div>
-
+<!-- Intro Section -->
     <div class="introC">
         <div class="textC">
-            <h2>Cart</h2>
+            <h2>Cart</h2> <!-- Heading -->
             <button>
-                <span class="button-press">Order</span>
+                <span class="button-press">Order</span><!-- Order button -->
             </button>
         </div>
     </div>
-
+<!-- Sale / Choices Section -->
     <div class="saleC">
         Choices
     </div>
-
+<!-- Products List -->
     <div class="productsC">
         <div class="productC">
             <div class="itemsC">
                 <img src="pictures/oak-chair.avif" alt="Oak chair"
                 onclick="openPopup(this.src, 'Oak chair')">
-                Oak chair
+                Oak chair <!-- Product name -->
             </div>
             <div class="descriptionC">
                 <h3>Product description</h3>
@@ -54,7 +54,7 @@
                     <h3>Add Items</h3>
                 </div>
                 <div class="counterC" id="count1">
-                    <h4>0</h4>
+                    <h4>0</h4> <!-- Item count -->
                 </div>
                 <div class="button-boxC">
                     <div class="add-buttonC">
@@ -213,20 +213,20 @@
             </div>
         </div>
     </div> 
-
+<!-- Contact Section -->
     <div class="contactC">
         contact us at<br>
         chairbuy@gmail.com for<br>
         more information
     </div>
-
+<!-- Product Popup -->
     <div id="popup" class="popupC">
         <div class="popup-contentC">
             <img id="popup-img" src="/pictures/transparent-img.webp" alt="">
             <p id="popup-text"></p>
         </div>
     </div>
-
+<!-- Cart page JS -->
 <script src="script-cart.js"></script>
 </body>
 </html>
