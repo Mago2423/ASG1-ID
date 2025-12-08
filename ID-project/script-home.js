@@ -1,3 +1,4 @@
+/* Function to open the product popup with the image and text */
 function openPopup(imageSrc, text) {
     document.getElementById("popup-img").src = imageSrc;
     document.getElementById("popup-text").textContent = text;
